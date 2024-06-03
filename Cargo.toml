@@ -8,6 +8,7 @@ license = "GPL-3.0-or-later OR Apache-2.0"
 homepage = "https://github.com/rcore-os/arceos"
 repository = "https://github.com/rcore-os/arceos/tree/main/api/axfeat"
 documentation = "https://rcore-os.github.io/arceos/axfeat/index.html"
+keywords = ["Starry"]
 
 [features]
 default = []
@@ -43,7 +44,7 @@ sched_cfs = ["axtask/sched_cfs", "irq"]
 # File system
 fs = ["alloc", "paging", "axdriver/virtio-blk", "dep:axfs", "axruntime/fs"] # TODO: try to remove "paging"
 fatfs = ["axfs/fatfs"]
-ext4fs = ["axfs/ext4fs"]
+lwext4_rust = ["axfs/lwext4_rust"]
 myfs = ["axfs?/myfs"]
 ext4_rs = ["axfs/ext4_rs"]
 
